@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1 Cosmosbox Handyman 汗滴佬
+  p #{title}專做雜事！
+
+  - for (var key in tasks)
+    - task = tasks[key]
+
+    form(method='post')
+      input(type='hidden', name='do_task', value='#{key}')
+      - if (task.isLock()) 
+        input(type='submit', value='#{task.getText()}', disabled="true")
+      - else
+        input(type='submit', value='#{task.getText()}')
+
+  h2 日誌輸出
+  textarea(rows='100', cols='200', readonly='readonly') #{logs}
+
