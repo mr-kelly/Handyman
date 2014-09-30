@@ -1,0 +1,20 @@
+{
+  "name": "handyman",
+  "version": "1",
+  "homepage": "https://github.com/mr-kelly/Handyman",
+  "authors": [
+    "Mrkelly <chepy.v@gmail.com>"
+  ],
+  "main": "main.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
